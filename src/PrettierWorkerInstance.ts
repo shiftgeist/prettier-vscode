@@ -23,13 +23,13 @@ const worker = new Worker(
 export const PrettierWorkerInstance: PrettierInstanceConstructor = class PrettierWorkerInstance
   implements PrettierInstance
 {
-  private messageResolvers: Map<
+  private messageResolvers = new Map<
     number,
     {
       resolve: (value: unknown) => void;
       reject: (value: unknown) => void;
     }
-  > = new Map();
+  >();
 
   public version: string | null = null;
 
@@ -119,7 +119,10 @@ export const PrettierWorkerInstance: PrettierInstanceConstructor = class Prettie
     return result;
   }
 
-  private callMethod(methodName: string, methodArgs: unknown[]): Promise<any> {
+  private callMethod(
+    methodName: string,
+    methodArgs: unknown[]
+  ): Promise<unknown> {
     const callId = currentCallId++;
     const promise = new Promise((resolve, reject) => {
       this.messageResolvers.set(callId, { resolve, reject });

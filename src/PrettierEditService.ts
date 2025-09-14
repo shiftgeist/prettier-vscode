@@ -29,8 +29,8 @@ import {
 import { getConfig, isAboveV3 } from "./util";
 
 interface ISelectors {
-  rangeLanguageSelector: ReadonlyArray<DocumentFilter>;
-  languageSelector: ReadonlyArray<DocumentFilter>;
+  rangeLanguageSelector: readonly DocumentFilter[];
+  languageSelector: readonly DocumentFilter[];
 }
 
 /**

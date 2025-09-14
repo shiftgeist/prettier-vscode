@@ -6,8 +6,20 @@ All notable changes to the "prettier-vscode" extension will be documented in thi
 
 ## [Unreleased]
 
+### Changed
+
+- Modernized project setup:
+  - Standardized CI to use `pnpm`.
+  - Migrated ESLint configuration to the modern flat config format (`eslint.config.mjs`).
+  - Updated TypeScript configuration to target ES2022 with NodeNext module resolution.
+  - Increased the required VS Code engine version to `^1.104.0`.
+
+### Fixed
+
 - Fix typos (#3735) - Thanks to [@noritaka1166](https://github.com/noritaka1166)
-- Remove husky
+
+### Internal
+
 - Move from yarn to pnpm
 - Add `.editorconfig`
 

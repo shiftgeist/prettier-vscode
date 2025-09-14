@@ -30,6 +30,6 @@ export interface PrettierInstance {
   ): Promise<PrettierOptions | null>;
 }
 
-export interface PrettierInstanceConstructor {
-  new (modulePath: string): PrettierInstance;
-}
+export type PrettierInstanceConstructor = new (
+  modulePath: string
+) => PrettierInstance;

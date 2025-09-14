@@ -58,7 +58,7 @@ export function resolveGlobalNodePath(
       }
     }
     return undefined;
-  } catch (err) {
+  } catch (_err) {
     return undefined;
   } finally {
     process.removeListener("SIGPIPE", handler);
@@ -116,12 +116,12 @@ export function resolveGlobalYarnPath(
         if (yarn.type === "log") {
           return path.join(yarn.data, "node_modules");
         }
-      } catch (e) {
+      } catch (_e) {
         // Do nothing. Ignore the line
       }
     }
     return undefined;
-  } catch (err) {
+  } catch (_err) {
     return undefined;
   } finally {
     process.removeListener("SIGPIPE", handler);
