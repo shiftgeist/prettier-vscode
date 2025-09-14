@@ -5,7 +5,7 @@ Feel free to open issues or PRs!
 ## Running extension
 
 - Open this repository inside VSCode
-- `yarn install`
+- `pnpm install`
 - Debug sidebar
 - `Run Extension`
 
@@ -20,4 +20,4 @@ Tests open a VSCode instance and load `./testProject` as root workspace.
 OR
 
 Without having an instance VSCode running (or it won't start)
-`yarn test`
+`pnpm test`
