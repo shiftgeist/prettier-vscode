@@ -79,8 +79,7 @@
     "watch": "tsc --watch -p ./",
     "webpack-dev": "webpack --mode development --watch",
     "webpack": "webpack --mode development",
-    "chrome": "yarn webpack && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. .",
-    "prepare": "husky"
+    "chrome": "yarn webpack && vscode-test-web --browserType=chromium --extensionDevelopmentPath=. ."
   },
   "lint-staged": {
     "**/*.{ts,json,md,yml,hbs,js}": [
@@ -462,5 +461,6 @@
     "publisherDisplayName": "Prettier",
     "publisherId": "d16f4e39-2ffb-44e3-9c0d-79d873570e3a",
     "isPreReleaseVersion": false
-  }
+  },
+  "packageManager": "pnpm@10.16.1+sha512.0e155aa2629db8672b49e8475da6226aa4bdea85fdcdfdc15350874946d4f3c91faaf64cbdc4a5d1ab8002f473d5c3fcedcd197989cf0390f9badd3c04678706"
 }

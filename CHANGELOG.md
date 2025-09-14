@@ -4,6 +4,13 @@ All notable changes to the "prettier-vscode" extension will be documented in thi
 
 <!-- Check [Keep a Changelog](https://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [Unreleased]
+
+- Fix typos (#3735) - Thanks to [@noritaka1166](https://github.com/noritaka1166)
+- Remove husky
+- Move from yarn to pnpm
+- Add `.editorconfig`
+
 ## [11.0.0]
 
 - [BREAKING CHANGE] Prevent `.editorconfig` from satisfying the `requireConfig` setting (#2708) - Thanks to [@redoPop](https://github.com/redoPop)
